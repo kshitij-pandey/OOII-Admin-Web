@@ -1,0 +1,1072 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Welcome</title>
+	<meta charset="utf-8">
+  
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+      *{
+  padding:0;
+  margin:0;
+}
+.sidebar{
+  float: left;
+  width: 200px;
+  height: 100%;
+  background-color: rgb(47, 47, 30);
+}
+.sidebar ul a{
+  display: block;
+  
+  width: 100%;
+  line-height: 50px;
+  padding-left: 10px;
+  text-decoration: none;
+  box-sizing: border-box;
+  color: white;
+  font-size: 20px;
+  border-bottom: 1px solid rgb(204, 204, 179);
+}
+.sidebar ul a:hover{
+  background-color: yellow;
+  color:black;
+}
+.header{
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  border-bottom: 1px solid rgb(204, 204, 179);
+}
+.heading{
+  font-size: 50px;
+  font-weight: bold;
+  margin-left: 30px;
+}
+
+
+.top{
+  width: 100%;
+  height: 50px;
+  box-sizing: border-box;
+  border-bottom: 1px solid rgb(204, 204, 179);
+}
+.top input[type=text]
+{
+  margin-left: 20px;
+  margin-top: 15px;
+  font-size: 20px;
+  border: none;
+}
+.sections{
+  padding-top: 10px;
+    padding-left: 250px;
+}
+.sections button{
+  text-align: center;
+  width: 160px;
+  font-size: 20px;
+  padding:15px;
+  background-color: white;
+  border-radius: 10px;
+  border-width: 1px;
+  margin-left: 5px;
+
+}
+.sections button:hover{
+  background-color: yellow;
+  cursor: pointer;
+}
+#active{
+  background-color: yellow;
+  color: black;
+}
+.content{
+  padding-top: 40px;
+    margin-left: 240px;
+}
+.content table{
+  border-collapse: collapse;
+}
+.content th{
+  width: 120px;
+  font-size: 20px;
+  padding-bottom: 20px;
+
+}
+.content td{
+  height: 50px;
+  text-align: center;
+  width: 150px;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+}
+
+.pic{
+  
+  width:30px;
+  height: 30px;
+  margin-left: 10px;
+  border-radius: 50%;
+}
+.rows{
+  margin-left: 240px;
+  border:1px solid rgb(204, 204, 179);
+  border-radius: 10px;
+
+}
+
+.btn{
+  margin-left: -20px;
+  cursor: pointer;
+  background-color: white;
+  color: rgb(128, 255, 170);
+  width: 60px;
+  border-radius: 10px;
+  border-color: rgb(128, 255, 170);
+  color: green;
+  padding:5px;
+}
+.btn-1{
+  margin-left: -20px;
+  cursor: pointer;
+  background-color: white;
+  color: rgb(255, 128, 128);
+  width: 60px;
+  border-radius: 10px;
+  border-color: rgb(255, 128, 128);
+  color: green;
+  padding:5px;
+}
+.sub{
+  display: none;
+  margin-left: 100px;
+  width: 80px;
+  font-size: 20px;
+  
+}
+
+ul li:hover .sub{
+  display: block;
+  position: absolute;
+  background-color: black;
+}
+.sub a{
+
+  display: block;
+  line-height: 30px;
+  width: 100%;
+  color: black;
+  box-sizing: border-box;
+  color: white;
+  font-size: 15px;
+  border-bottom: 1px solid rgb(204, 204, 179);
+
+}
+.sub a:hover{
+
+  background-color: pink;
+}
+.emailText {
+  border: 1px solid black ;
+  margin-right: 20px;
+  margin-left: 220px;
+  height: 400px;
+  width:700px;
+  border-radius:5px;
+  
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+/* Language Page*/
+.langInput{padding:8px;display:block;border:none;border-bottom:1px solid #ccc; width:210px;border-radius:5px;}
+.langBorder{border:1px solid #ccc!important}
+
+
+
+.langSections{
+  padding-top: 10px;
+    padding-left: 100px;
+}
+.langSections button{
+  text-align: center;
+  width: 15%;
+  font-size: 20px;
+  padding:15px;
+  background-color: white;
+  border-radius: 10px;
+  border-width: 1px;
+  margin-left: 500px;
+  margin-top:30px;
+
+}
+.langSections button:hover{
+  background-color: yellow;
+  cursor: pointer;
+}
+.langManageButton{
+  border: 1px solid black;
+    padding:20px ;
+    width:120px;
+    margin-left:60px;
+    color:black;
+     background-color:yellow;
+    border-radius: 5px;
+               }
+
+  /* Ctaegories */
+ .cateSection{
+  padding-top: 10px;
+    padding-left: 50px;
+
+}
+.cateSection button{
+  text-align: center;
+  width: 15%;
+  font-size: 20px;
+  padding:15px;
+  background-color: white;
+  border-radius: 10px;
+  border-width: 1px;
+  margin-left: 10px;
+  margin-top:30px;
+
+
+}
+.cateSection button:hover{
+  background-color: yellow;
+  cursor: pointer;
+}
+.cateBox {
+    width: 170px;
+    height: 210px;
+    border: 1px solid black;
+    border-radius:10px;
+}
+.cateBuilding{
+  margin-left:160px;
+  width:20px;
+  height:20px;
+  margin-top:0px;
+}
+.cateBuildingOption{
+  width:300px;
+  border-radius:5px;
+  border:1px solid black;
+}
+
+ .cateBuildingBelow button{
+  text-align: center;
+  width: 170px;
+  font-size: 15px;
+  background-color: white;
+  border-radius: 5px;
+  border-width: 1px;
+  margin-left:0px;
+  margin-top:5px;
+  color:black;
+  height:20px;
+ }
+               
+.cateBuildingBelow button:hover{
+  background-color: yellow;
+  cursor: pointer;
+  color:black;
+ }
+.cateInput {display:block;
+  border:none;
+  border-bottom:1px solid #ccc;
+  width:80px;border-radius:5px;
+  height:15px;
+  
+}
+.cateBorder{border:1px solid #ccc!important}
+
+.cateButton button{
+  text-align: center;
+  width: 15%;
+  font-size: 20px;
+  padding:15px;
+  background-color: white;
+  border-radius: 10px;
+  border-width: 1px;
+  margin-left: 500px;
+  margin-top:10px;
+
+}
+.cateButton button:hover{
+  background-color: yellow;
+  cursor: pointer;
+}
+.dropbtn {
+  background-color: white;
+  color: black;
+  width:30px;
+  height:30px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border: 1px solid black;
+  border-radius:3px;
+  text-align:center;
+}
+
+.dropdown {
+  position: relative;
+  margin-left:150px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 50px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  width:100px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 5px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: yellow;
+} 
+
+    </style>
+</head>
+<body>
+  <div class="sidebar">
+  <ul class="nav nav-tabs">
+  <a href="#menu1">Dashboard</a>
+  <a href="#menu2">General Setting</a>
+  <a href="#email">Email</a>
+  <a href="#">Redeem Request</a>
+  <a href="#">Users</a>
+  <a href="#categories">Categories</a>
+  <a href="#language">Language</a>
+  <a href="#services">Services</a>
+  <a href="#">Cancelled Service</a>
+  <a href="#">Banner Image</a>
+  <a href="#">Contact Us</a>
+  <a href="#">Review</a> 
+  <a href="#">Payment History</a> 
+  <a href="#">Order and Invoices</a> 
+  </ul> 
+  </div>
+  
+  <div class="header">
+  	<i class="fa fa-user-circle-o" style="font-size:50px; margin-left: 100px; margin-top: 20px;"></i>
+    <nobr class="heading">Welcome Admin!</nobr>
+  </div>
+  <div class="top">
+		<a href="#"><i class='fas fa-search' style='float: left;margin-left: 25px; margin-top: 15px; font-size:20px; color: black;'></i></a>
+		<input type="text" placeholder="Search" name="Search" style="border">
+	    </div>
+
+ <div class="container">
+
+  <div class="tab-content">
+    
+
+
+
+
+    
+    <div id="services" class="tab-pane fade">
+   <div class="column" style="float:left">
+     <div class="row">
+	<div class="sections">
+		<div class="row" style="float:left;margin-left: 0px;">
+		<button>Individual</button>
+		<button id="active">Contractor</button>
+		<button>Business</button>
+		<br><br><br><br>
+	    </div>
+	  </div>  
+	</div>
+   </div>
+   <div class="column">	
+   	<div class="row">
+    	<div class="content">
+		<table>
+			<tr>
+				<th>Name</th>
+				<th>Phone number</th>
+				<th>ID</th>
+				<th>Hired</th>
+				<th>Hours Worked</th>
+				<th>Status</th>
+			</tr>
+
+			<tr class="rows">
+				<td style="width: 200px; text-align: left;"><input type="checkbox" name="checkbox"><img src="image/Sushant.jpg" class="pic">  Shubham Sapkal</td>
+				<td>7276210213</td>
+				<td>fndfudhsg</td>
+				<td>10</td>
+				<td>121</td>
+				<td>
+					<ul>
+						<li style="list-style: none;"><button class="btn" style="float: left; margin-left: 10px;">Free</button></li>
+						<li style="list-style: none;"><i class="fa fa-ellipsis-h"></i>
+							<div class="sub">
+								<ul>
+                        	<li style="list-style: none;"><a style="text-decoration: none;" href="#">View</a></li>
+                        	<li style="list-style: none;"><a style="text-decoration: none;" href="#">Block User</a></li>
+                        </ul> 
+							</div>
+                             
+                     
+						 </li>
+					</ul>       	
+				</td>
+			</tr>
+
+
+            <tr class="rows" >
+				<td style="width: 200px; text-align: left;"><input type="checkbox" name="checkbox"><img src="image/Kunal.jpg" class="pic">  Sushant Patil</td>
+				<td>7276210213</td>
+				<td>fndfudhsg</td>
+				<td>10</td>
+				<td>121</td>
+				<td>
+					<ul>
+						<li style="list-style: none;"><button class="btn" style="float: left; margin-left: 10px;">Free</button></li>
+						<li style="list-style: none;"><i class="fa fa-ellipsis-h"></i>
+							<div class="sub">
+								<ul>
+                        	<li style="list-style: none;"><a style="text-decoration: none;" href="#">View</a></li>
+                        	<li style="list-style: none;"><a style="text-decoration: none;" href="#">Block User</a></li>
+                        </ul> 
+							</div>
+                             
+                     
+						 </li>
+					</ul>       	
+				</td>
+			</tr>
+    
+            <tr class="rows" >
+				<td style="width: 200px; text-align: left;"><input type="checkbox" name="checkbox"><img src="image/Shubham.jpg" class="pic">  Kaustubh Patil</td>
+				<td>7276210213</td>
+				<td>fndfudhsg</td>
+				<td>10</td>
+				<td>121</td>
+				<td>
+					<ul>
+						<li style="list-style: none;"><button class="btn-1" style="float: left; margin-left: 10px;">Engaged</button></li>
+						<li style="list-style: none;"><i class="fa fa-ellipsis-h"></i>
+							<div class="sub">
+								<ul>
+                        	<li style="list-style: none;"><a style="text-decoration: none;" href="#">View</a></li>
+                        	<li style="list-style: none;"><a style="text-decoration: none;" href="#">Block User</a></li>
+                        </ul> 
+							</div>
+                             
+                     
+						 </li>
+					</ul>       	
+				</td>
+			</tr>
+
+			
+
+
+		</table>
+	  </div>
+     </div>	
+    </div>
+</div>
+   
+
+    <div id="email" class="tab-pane fade">
+     	<div class="row">
+         <div class="col-75">
+           <textarea id="subject" name="subject" style="height:400px; margin-left:230px;width:80%;margin-top:30px;border-radius:10px; ">                
+                                   Congratulation, your Job is posted
+
+
+      Congratulations you Job hass been posted. Workers can now see your posted jobs and can accept it.
+      Once they accept, you will be notified immediately and once you get total number of workers, the link
+      will automatically expire.</textarea>
+           <input type="submit" value="Edit" style="margin-left:860px; margin-top:10px;width:70px;height:30px; background-color: yellow; color:black; border-radius:5px;">
+         </div>
+        </div>
+       <div class="row">
+       	 <div class="col-75">
+          <input type="submit" value="Edit">
+         </div>
+       </div>
+    
+    </div>
+        
+    <div id="language" class="tab-pane fade">
+    	<div>
+    		<h4><b>Currently Used Languages</b><h4>
+        </div>
+      <div class="column" style="float:left; padding-left: 50px;padding-right: 50px">
+      	<div class="row">
+      		<div class="column" style="float:left;">
+      		 <input class="langInput langBorder" name="first" type="text">
+      		 <br>
+      		</div> 
+      		<div class="column" style="float:left; padding-left: 20px;">
+      		 <i class="fa fa-trash-o" aria-hidden="true"></i>
+      		</div> 
+      		<div class="column" style="float:left; padding-left: 20px;"> 
+      		 <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+      		</div> 
+      		
+       </div>
+       <div class="row">
+        	<div class="column" style="float:left;">
+      		 <input class="langInput langBorder" name="first" type="text">
+      		</div> 
+      		<div class="column" style="float:left; padding-left: 20px;">
+      		 <i class="fa fa-trash-o" aria-hidden="true"></i>
+      		</div> 
+      		<div class="column" style="float:left; padding-left: 20px;"> 
+      		 <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+      		</div> 
+       </div>
+      
+      </div>	
+      
+      
+      <div class="column" style="float:left; padding-left: 50px;padding-right: 50px">
+      	<div class="row">
+      		<div class="column" style="float:left;">
+      		 <input class="langInput langBorder" name="first" type="text">
+      		 <br>
+      		</div> 
+      		<div class="column" style="float:left; padding-left: 20px;">
+      		 <i class="fa fa-trash-o" aria-hidden="true"></i>
+      		</div> 
+      		<div class="column" style="float:left; padding-left: 20px;"> 
+      		 <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+      		</div> 
+      		
+       </div>
+       <div class="row">
+        	<div class="column" style="float:left;">
+      		 <input class="langInput langBorder" name="first" type="text">
+      		</div> 
+      		<div class="column" style="float:left; padding-left: 20px;">
+      		 <i class="fa fa-trash-o" aria-hidden="true"></i>
+      		</div> 
+      		<div class="column" style="float:left; padding-left: 20px;"> 
+      		 <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+      		</div> 
+       </div>
+      
+      </div>	
+
+      <div class="column" style="float:left; padding-left: 50px;padding-right: 50px">
+      	<div class="row">
+      		<div class="column" style="float:left;">
+      		 <input class="langInput langBorder" name="first" type="text">
+      		 <br>
+      		</div> 
+      		<div class="column" style="float:left; padding-left: 20px;">
+      		 <i class="fa fa-trash-o" aria-hidden="true"></i>
+      		</div> 
+      		<div class="column" style="float:left; padding-left: 20px;"> 
+      		 <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+      		</div> 
+      		
+       </div>
+       <div class="row">
+        	<div class="column" style="float:left;">
+      		 <input class="langInput langBorder" name="first" type="text">
+      		</div> 
+      		<div class="column" style="float:left; padding-left: 20px;">
+      		 <i class="fa fa-trash-o" aria-hidden="true"></i>
+      		</div> 
+      		<div class="column" style="float:left; padding-left: 20px;"> 
+      		 <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+      		</div> 
+       </div>
+      </div>
+      
+      <div class="langSections">
+      		<button id="active">ADD</button>
+	  </div>
+      
+      <div class="section-padding">
+      	<h4><b>Manage Constants</b></h4>
+      </div> 
+      
+      <div class="row">
+      <div class="column" style="float:left; padding-left: 50px;padding-right: 50px">
+      	<div class="row">
+      		<p>States</p>
+       </div>
+       <div class="row">
+        	<div class="column" style="float:left;">
+      		 <form action="#">
+  
+               <select name="cars" id="cars" class="langInput langBorder">
+                 <option value="volvo">Delhi</option>
+                 <option value="saab">Saab</option>
+                 <option value="opel">Opel</option>
+                 <option value="audi">Audi</option>
+                 </select>
+             </form>
+
+      		 <br><br>
+      		 <input type="submit" value="add" class="langManageButton">
+      		</div> 
+       </div>
+      
+      </div>	 
+     <div class="column" style="float:left; padding-left:0px;padding-right: 50px">
+      	<div class="row">
+      		<p>Gender</p>
+      		
+       </div>
+       <div class="row">
+        	<div class="column" style="float:left;">
+      		 <form action="#">
+  
+               <select name="cars" id="cars" class="langInput langBorder">
+                 <option value="volvo">First Name</option>
+                 <option value="saab">Saab</option>
+                 <option value="opel">Opel</option>
+                 <option value="audi">Audi</option>
+                 </select>
+             </form>
+
+      		 <br><br>
+      		 <input type="submit" value="add" class="langManageButton">
+      		</div> 
+       </div>
+      
+      </div>	
+      
+      
+      <div class="column" style="float:left; padding-left: 0px;padding-right: 50px">
+      	<div class="row">
+      		<p>Name Title</p>
+       </div>
+       <div class="row">
+        	<div class="column" style="float:left;">
+      		 <form action="#">
+  
+               <select name="cars" id="cars" class="langInput langBorder">
+                 <option value="volvo">Rajasthan</option>
+                 <option value="saab">Saab</option>
+                 <option value="opel">Opel</option>
+                 <option value="audi">Audi</option>
+                 </select>
+             </form>
+
+      		 <br><br>
+      		 <input type="submit" value="add" class="langManageButton">
+      		</div>
+       </div>
+      
+      </div>	
+
+      <div class="column" style="float:left; padding-left: 0px;padding-right: 50px">
+      	<div class="row">
+      		<p>Name Title</p>
+      		
+       </div>
+       <div class="row">
+        	<div class="column" style="float:left;">
+      		 <form action="#">
+  
+               <select name="cars" id="cars" class="langInput langBorder">
+                 <option value="volvo">Karnatka</option>
+                 <option value="saab">Saab</option>
+                 <option value="opel">Opel</option>
+                 <option value="audi">Audi</option>
+                 </select>
+             </form>
+
+      		 <br><br>
+      		 <input type="submit" value="add" class="langManageButton">
+      		</div> 
+       </div>
+      </div>
+     </div> 
+   	
+
+    </div>
+   
+  
+
+
+
+   <div id="categories" class="tab-pane fade">
+   	<div class="cateSection">
+		<button>Unskilled</button>
+		<button id="active">Skilled</button>
+	</div>
+   	<div class="row">
+      <div class="column" style="float:left; padding-left: 50px;padding-right: 20px; margin-top: 30px">
+      	
+       <div class="row">
+        <div class="cateBox">
+
+         <div class="row">
+             <i class="fa fa-building fa-5x" style="margin-top:50px;margin-left:60px;" aria-hidden="true"></i>
+         </div>
+         <div class="row">
+             <h3 style="margin-left:50px;">Building</h4>
+         </div>
+        </div>
+        
+        </div>
+        <div class="row">
+      		<div class="cateBuildingBelow">
+		      <button id="active">Daily</button>
+	         </div>
+        </div>
+        <div class="row">
+             <div class="cateBuildingBelow">
+		      <button>Fornightly</button>
+	         </div>
+        
+        </div>
+         <div class="row">
+        <div class="cateBuildingBelow">
+		      <button id="Active">Monthly</button>
+	         </div>
+        </div>
+         <div class="row">
+           <div class="column" style="float:left;">
+           	<p>price</p>
+           </div>
+           <div class="column" style="margin-left:80px;margin-top:5px;">
+           	<input class="cateInput cateBorder" name="first" type="text" placeholder=" Enter Price">
+           </div>
+        </div>
+        <div class="row">
+           <div class="column" style="float:left;">
+           	<p>Service Fee</p>
+           </div>
+           <div class="column" style="margin-left:80px;margin-top:5px;">
+           	<input class="cateInput cateBorder" name="first" type="text" placeholder=" Enter Price">
+           </div>
+        </div>
+
+      
+      </div>	 
+      <div class="column" style="float:left; padding-left: 50px;padding-right: 20px; margin-top: 30px">
+      	<div class="row">
+      		
+        </div>
+        <div class="row">
+        	<div class="cateBox">
+               <div class="row">
+                 <div class="dropdown">
+                  <button class="dropbtn fa fa-angle-down fa-3x"></button>
+                   <div class="dropdown-content">
+                    <a href="#">Edit</a>
+                    <a href="#">View</a>
+                    <a href="#">Activate</a>
+                    <a href="#">Deactivate</a>
+                    <a href="#">Delete</a>
+                    </div>
+                 </div>
+               </div>
+         <div class="row">
+             <i class="fa fa-building fa-5x" style="margin-top:50px;margin-left:60px;" aria-hidden="true"></i>
+         </div>
+         <div class="row">
+             <h3 style="margin-left:50px;">Building</h4>
+         </div>
+        </div>
+        
+        </div>
+        <div class="row">
+      		<div class="cateBuildingBelow">
+		      <button id="active">Daily</button>
+	         </div>
+        </div>
+        <div class="row">
+             <div class="cateBuildingBelow">
+		      <button>Fornightly</button>
+	         </div>
+        
+        </div>
+         <div class="row">
+        <div class="cateBuildingBelow">
+		      <button id="Active">Monthly</button>
+	         </div>
+        </div>
+         <div class="row">
+           <div class="column" style="float:left;">
+           	<p>price</p>
+           </div>
+           <div class="column" style="margin-left:80px;margin-top:5px;">
+           	<input class="cateInput cateBorder" name="first" type="text" placeholder=" Enter Price">
+           </div>
+        </div>
+        <div class="row">
+           <div class="column" style="float:left;">
+           	<p>Service Fee</p>
+           </div>
+           <div class="column" style="margin-left:80px;margin-top:5px;">
+           	<input class="cateInput cateBorder" name="first" type="text" placeholder=" Enter Price">
+           </div>
+        </div>
+
+      
+      </div>	 	 
+      	<div class="row">
+      <div class="column" style="float:left; padding-left: 50px;padding-right: 20px; margin-top: 30px">
+      	<div class="row">
+      		
+        </div>
+        <div class="row">
+        	<div class="cateBox">
+               <div class="row">
+                 <div class="dropdown">
+                  <button class="dropbtn fa fa-angle-down fa-3x"></button>
+                   <div class="dropdown-content">
+                    <a href="#">Edit</a>
+                    <a href="#">View</a>
+                    <a href="#">Activate</a>
+                    <a href="#">Deactivate</a>
+                    <a href="#">Delete</a>
+                    </div>
+                 </div>
+               </div>
+         <div class="row">
+             <i class="fa fa-building fa-5x" style="margin-top:50px;margin-left:60px;" aria-hidden="true"></i>
+         </div>
+         <div class="row">
+             <h3 style="margin-left:50px;">Building</h4>
+         </div>
+        </div>
+        
+        </div>
+        <div class="row">
+      		<div class="cateBuildingBelow">
+		      <button id="active">Daily</button>
+	         </div>
+        </div>
+        <div class="row" >
+             <div class="cateBuildingBelow">
+		      <button>Fornightly</button>
+	         </div>
+        
+        </div>
+         <div class="row">
+        <div class="cateBuildingBelow">
+		      <button id="Active">Monthly</button>
+	         </div>
+        </div>
+         <div class="row">
+           <div class="column" style="float:left;">
+           	<p>price</p>
+           </div>
+           <div class="column" style="margin-left:80px;margin-top:5px;">
+           	<input class="cateInput cateBorder" name="first" type="text" placeholder=" Enter Price">
+           </div>
+        </div>
+        <div class="row">
+           <div class="column" style="float:left;">
+           	<p>Service Fee</p>
+           </div>
+           <div class="column" style="margin-left:80px;margin-top:5px;">
+           	<input class="cateInput cateBorder" name="first" type="text" placeholder=" Enter Price">
+           </div>
+        </div>
+
+      
+      </div>
+       <div class="column" style="float:left; padding-left: 50px;padding-right: 20px; margin-top: 30px">
+      	
+       <div class="row">
+        <div class="cateBox">
+
+         <div class="row">
+             <i class="fa fa-building fa-5x" style="margin-top:50px;margin-left:60px;" aria-hidden="true"></i>
+         </div>
+         <div class="row">
+             <h3 style="margin-left:50px;">Building</h4>
+         </div>
+        </div>
+        
+        </div>
+        <div class="row" >
+      		<div class="cateBuildingBelow">
+		      <button id="active">Daily</button>
+	         </div>
+        </div>
+        <div class="row">
+             <div class="cateBuildingBelow">
+		      <button>Fornightly</button>
+	         </div>
+        
+        </div>
+         <div class="row">
+        <div class="cateBuildingBelow">
+		      <button id="Active">Monthly</button>
+	         </div>
+        </div>
+         <div class="row">
+           <div class="column" style="float:left;">
+           	<p>price</p>
+           </div>
+           <div class="column" style="margin-left:80px;margin-top:5px;">
+           	<input class="cateInput cateBorder" name="first" type="text" placeholder=" Enter Price">
+           </div>
+        </div>
+        <div class="row">
+           <div class="column" style="float:left;">
+           	<p>Service Fee</p>
+           </div>
+           <div class="column" style="margin-left:80px;margin-top:5px;">
+           	<input class="cateInput cateBorder" name="first" type="text" placeholder=" Enter Price">
+           </div>
+        </div>
+
+      
+      </div>	 
+       <div class="column" style="float:left; padding-left: 50px;padding-right: 20px; margin-top: 30px">
+      	
+       <div class="row">
+        <div class="cateBox">
+
+         <div class="row">
+             <i class="fa fa-building fa-5x" style="margin-top:50px;margin-left:60px;" aria-hidden="true"></i>
+         </div>
+         <div class="row">
+             <h3 style="margin-left:50px;">Building</h4>
+         </div>
+        </div>
+        
+        </div>
+        <div class="row">
+      		<div class="cateBuildingBelow">
+		      <button id="active">Daily</button>
+	         </div>
+        </div>
+        <div class="row">
+             <div class="cateBuildingBelow">
+		      <button>Fornightly</button>
+	         </div>
+        
+        </div>
+         <div class="row">
+        <div class="cateBuildingBelow">
+		      <button id="Active">Monthly</button>
+	         </div>
+        </div>
+         <div class="row">
+           <div class="column" style="float:left;">
+           	<p>price</p>
+           </div>
+           <div class="column" style="margin-left:80px;margin-top:5px;">
+           	<input class="cateInput cateBorder" name="first" type="text" placeholder=" Enter Price">
+           </div>
+        </div>
+        <div class="row">
+           <div class="column" style="float:left;">
+           	<p>Service Fee</p>
+           </div>
+           <div class="column" style="margin-left:80px;margin-top:5px;">
+           	<input class="cateInput cateBorder" name="first" type="text" placeholder=" Enter Price">
+           </div>
+        </div>
+
+      
+      </div>	 
+      </div>
+
+       <div class="cateButton">
+      		<button id="active">ADD</button>
+	  </div>
+     </div> 
+   	
+
+
+
+   	
+   </div>
+    
+
+
+  </div>
+    
+</div>
+<script>
+$(document).ready(function(){
+  $(".nav-tabs a").click(function(){
+    $(this).tab('show');
+  });
+  $('.nav-tabs a').on('shown.bs.tab', function(event){
+    var x = $(event.target).text();         // active tab
+    var y = $(event.relatedTarget).text();  // previous tab
+    $(".act span").text(x);
+    $(".prev span").text(y);
+  });
+});
+</script>
+<script>
+// Add active class to the current button (highlight it)
+var header = document.getElementById("myDIV");
+var btns = header.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("active");
+  if (current.length > 0) { 
+    current[0].className = current[0].className.replace(" active", "");
+  }
+  this.className += " active";
+  });
+}
+</script>
+
+</body>
+</html>
